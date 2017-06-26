@@ -124,6 +124,29 @@
     flex-direction: row;
   }
 
+  #circles{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .circle-container{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 33%;
+  }
+
+  .circle {
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+  }
+
   #offer {
     flex-basis: 70%;
   }
