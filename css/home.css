@@ -1,13 +1,150 @@
+
 /*Mobile View*/
+@media screen and (max-width: 599px) {
+  body{
+    margin: 0;
+  }
+
+  #main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #slide-show{
+    display: flex;
+    justify-content: center;
+  }
+
+  img {
+    width: 75%;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  ul{
+    list-style-position: inside;
+  }
+
+  p{
+    margin: 1em;
+  }
+
+  #top-nav {
+    background-color: grey;
+    margin-bottom: 1em;
+    display: flex;
+  }
+
+  #top-nav a{
+    margin: 1em;
+  }
+
+  #bottom-nav {
+    background-color: grey;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1em;
+    margin-bottom: 0;
+  }
+}
 
 
 /*TABLET STYLES*/
 @media screen and (min-width: 600px) {
+  body{
+    margin: 0;
+    background-color: blue;
+  }
 
+  #main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
+  #slide-show{
+    display: flex;
+    justify-content: center;
+  }
+
+  img {
+    width: 75%;
+    height: 15em;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  ul{
+    list-style-position: inside;
+  }
+
+  p{
+    margin: 1em;
+  }
+
+  #top-nav {
+    background-color: grey;
+    margin-bottom: 1em;
+    display: flex;
+  }
+
+  #top-nav a{
+    margin: 1em;
+  }
+
+  #bottom-nav {
+    background-color: grey;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1em;
+    margin-bottom: 0;
+  }
+  }
+
+/*LARGE TABLET STYLES*/
+@media screen and (min-width: 900px) {
+  body{
+    background-color: red;
+  }
+
+  img {
+    width: 75%;
+    height: 20em;
+  }
+
+  #mid-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #offer {
+    flex-basis: 70%;
+  }
 }
 
 /*DESKTOP ONLY*/
 @media screen and (min-width: 1100px) {
+  body {
+    background-color: grey;
+    margin: 0;
+  }
 
+  img {
+    width: 75%;
+    height: 25em;
+  }
+
+  #bottom-nav {
+    background-color: red;
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 0;
+  }
 }
