@@ -3,13 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/contact.css">
   </head>
   <body>
-    <nav class="top-nav">
+    <nav id="top-nav">
       <a href="./home.html">Home</a>
       <a href="./contact.html">Contact Us</a>
       <a href="./application">Application</a>
     </nav>
-  
+    <div id="main-container">
+      <div id="map"></div>
+      <form action="index.html" method="post">
+        <input type="text" name="name" value="" placeholder="Name">
+        <input type="email" name="email" value="" placeholder="Email Address">
+        <textarea name="message" id="bio" cols="50" rows="10" placeholder="Please enter message here" value=""></textarea>
+        <button type="submit" name="button">Submit</button>
+      </form>
+    </div>
+    <nav id="bottom-nav">
+      <span>Haddon House</span>
+      <span>©&nbsp;Copyright | All Rights Reserved</span>
+      <a href="#top">Top</a>
+    </nav>
+    <script src="../config.js"></script>
+    <script src="../js/contact.js"></script>
   </body>
 </html>
