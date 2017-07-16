@@ -115,8 +115,6 @@ function income(num){
   return input
 }
 
-
-
 function addEmployment() {
   var employment = document.querySelector('.employmentContainer');
   var pastEmployment = document.querySelectorAll('.employment');
