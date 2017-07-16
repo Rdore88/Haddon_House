@@ -48,10 +48,10 @@ function lengthLived(num){
 }
 
 function addResidence(){
-  var residence = document.querySelector('.residenceContainer')
+  var residence = document.querySelector('.residenceContainer');
   console.log(residence);
-  var pastResidences = document.querySelectorAll('.residence')
-  var num = pastResidences.length + 1
+  var pastResidences = document.querySelectorAll('.residence');
+  var num = pastResidences.length + 1;
   var header = document.createElement('h3')
   header.textContent = "Residence " + num
   var div = document.createElement('div');
@@ -65,4 +65,72 @@ function addResidence(){
   residence.appendChild(header);
   residence.appendChild(div);
 
+}
+
+function employer(num){
+  var input = document.createElement('input');
+  input.type = "text";
+  input.placeholder = "Previous Employer";
+  input.name = "employer" + num;
+  return input
+}
+
+function employerAddress(num){
+  var input = document.createElement('input');
+  input.type = "text";
+  input.placeholder = "Employer Address";
+  input.name = "employerAddress" + num;
+  return input
+}
+
+function supervisor(num){
+  var input = document.createElement('input');
+  input.type = "text";
+  input.placeholder = "Supervisor/Manager";
+  input.name = "supervisor" + num;
+  return input
+}
+
+function position(num){
+  var input = document.createElement('input');
+  input.type = "text";
+  input.placeholder = "Position";
+  input.name = "position" + num;
+  return input
+}
+
+function employmentLength(num){
+  var input = document.createElement('input');
+  input.type = "text";
+  input.placeholder = "Length of Employment";
+  input.name = "employmentLength" + num;
+  return input
+}
+
+function income(num){
+  var input = document.createElement('input');
+  input.type = "text";
+  input.placeholder = "Monthly Gross Income";
+  input.name = "income" + num;
+  return input
+}
+
+
+
+function addEmployment() {
+  var employment = document.querySelector('.employmentContainer');
+  var pastEmployment = document.querySelectorAll('.employment');
+  var numEmployment = pastEmployment.length + 1;
+  var header = document.createElement('h3')
+  header.textContent = "Employment " + numEmployment;
+  var div = document.createElement('div');
+  div.className = "employment";
+  div.appendChild(employer(numEmployment));
+  div.appendChild(employerAddress(numEmployment));
+  div.appendChild(supervisor(numEmployment));
+  div.appendChild(position(numEmployment));
+  div.appendChild(employmentLength(numEmployment));
+  div.appendChild(income(numEmployment));
+  employment.appendChild(header);
+  employment.appendChild(div);
 }
