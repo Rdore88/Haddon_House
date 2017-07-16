@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Haddon House</title>
     <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/slideshow.css">
   </head>
   <body>
     <nav id="top-nav">
@@ -11,10 +12,19 @@
       <a href="./contact.html">Contact Us</a>
       <a href="./application">Application</a>
     </nav>
-    <div id="main-container">
-      <div id="slide-show">
-        <img src="../images/house.jpg" alt="">
+
+
+      <div class="bss-slides slideshow">
+        <figure>
+          <img src="../images/house.jpg" width="100%" />
+          <figcaption>Beautiful Exterior</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/house2.jpg" width="100%">
+          <figcaption>Fully Renovated</figcaption>
+        </figure>
       </div>
+<div id="main-container">
       <div id="mid-container">
         <div id="offer">
           <h1>What we offer</h1>
@@ -49,4 +59,14 @@
     </div>
   </body>
   <script type="text/javascript" src="../js/home.js"></script>
+  <script type="text/javascript" src="../js/slideshow.js"></script>
+  <script>
+  var opts = {
+    auto : {
+        speed : 3500
+    },
+    fullScreen : false
+};
+    makeBSS('.slideshow', opts);
+  </script>
 </html>
