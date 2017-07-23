@@ -1,0 +1,60 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+form {
+background-color: grey;
+padding: 1%;
+}
+
+.input{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1%;
+}
+
+.input input{
+  width: 40%;
+  margin: .5%;
+}
+
+.residence{
+  display: flex;
+  flex-direction: column;
+}
+
+.residence input {
+  width: 50%;
+  margin: .5%;
+}
+
+.employment{
+  display: flex;
+  flex-direction: column;
+}
+
+.employment input {
+  width: 50%;
+  margin: .5%;
+}
+
+#top-nav {
+  background-color: red;
+  margin-bottom: 1em;
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#top-nav a{
+  margin: 1em;
+}
+
+#bottom-nav {
+  background-color: red;
+  width: 100%;
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 0;
+}

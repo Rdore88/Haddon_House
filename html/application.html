@@ -1,122 +1,126 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Haddon House Application</title>
-    <link rel="stylesheet" href="../css/application.css">
-  </head>
-  <body>
-    <nav id="top-nav">
-      <a href="./home.html">Home</a>
-      <a href="./contact.html">Contact Us</a>
-      <a href="./application.html">Application</a>
-    </nav>
-    <h1>Haddon House Application</h1>
-    <h3>510 Boulevard N.E.</h3>
-    <h3>Atlanta, GA 30308</h3>
-    <h5>Application Fee of $35 per applicant. Each perspective tenant must fill out an indivicual application</h5>
-    <h5><b>Make check payable to: Foster Homes, LLC</b></h5>
-    <form class="" action="index.html" method="post">
-      <input type="text" name="name" value="" placeholder="Name">
-      <input type="password" name="ssnum" value="" placeholder="social security number">
-      <input type="tel" pattern="[0-9]{10}" name="phone" value="" placeholder="Home/Cell Phone">
-      <input type="email" name="email" value="" placeholder="Email">
-      <input type="text" name="emergency" value="" placeholder="Emergency Local Contact">
-      <input type="text" name="car" value="" placeholder="Car make/year/model/color">
-      <input type="text" name="carPlate" value="" placeholder="Plate Number/State">
-      <input type="number" name="drivelicense" value="" placeholder="Driver's License Number">
-      <div class="radio">
-        <label for="felony">Have you, or any other occupants, ever been convicted
+
+<head>
+  <meta charset="utf-8">
+  <title>Haddon House Application</title>
+  <link rel="stylesheet" href="../css/application.css">
+</head>
+
+<body>
+  <nav id="top-nav">
+    <a href="./home.html">Home</a>
+    <a href="./contact.html">Contact Us</a>
+    <a href="./application.html">Application</a>
+  </nav>
+  <h1>Haddon House Application</h1>
+  <h3>510 Boulevard N.E.</h3>
+  <h3>Atlanta, GA 30308</h3>
+  <h5>Application Fee of $35 per applicant. Each perspective tenant must fill out an indivicual application</h5>
+  <h5><b>Make check payable to: Foster Homes, LLC</b></h5>
+  <form action="mailto:rdore88@gmail.com" method="post">
+    <div class="input">
+    <input type="text" name="name" value="" placeholder="Name">
+    <input type="tel" pattern="[0-9]{10}" name="phone" value="" placeholder="Home/Cell Phone">
+    <input type="email" name="email" value="" placeholder="Email">
+    <input type="text" name="emergency" value="" placeholder="Emergency Local Contact">
+    <input type="text" name="car" value="" placeholder="Car make/year/model/color">
+    <input type="text" name="carPlate" value="" placeholder="Plate Number/State">
+    <input type="number" name="drivelicense" value="" placeholder="Driver's License Number">
+    </div>
+    <div class="radio">
+      <label for="felony">Have you, or any other occupants, ever been convicted
           of a felony, misdemeanor, or crime?</label><br>
-        <input type="radio" name="felony" value="yes">Yes
-        <input type="radio" name="felony" value="no">No<br>
-      </div>
-      <div class="radio">
-        <label for="litigation">
+      <input type="radio" name="felony" value="yes">Yes
+      <input type="radio" name="felony" value="no">No<br>
+    </div>
+    <div class="radio">
+      <label for="litigation">
           Do you, or any other occupants, have a history of any
           litigation, such as eviction, suits, judgements,
           bankruptcies, foreclosures, etc?
         </label><br>
-        <input type="radio" name="litigation" value="yes">Yes
-        <input type="radio" name="litigation" value="no">No<br>
-      </div>
-      <div class="radio">
-        <label for="sued">
+      <input type="radio" name="litigation" value="yes">Yes
+      <input type="radio" name="litigation" value="no">No<br>
+    </div>
+    <div class="radio">
+      <label for="sued">
           Have you, or any other occupants, ever been sued for
           rent?
         </label><br>
-        <input type="radio" name="sued" value="yes">Yes
-        <input type="radio" name="sued" value="no">No<br>
-      </div>
-      <div class="radio">
-        <label for="warrants">
+      <input type="radio" name="sued" value="yes">Yes
+      <input type="radio" name="sued" value="no">No<br>
+    </div>
+    <div class="radio">
+      <label for="warrants">
           Do you, or any other occupants, have any outstanding
           warrants for your arrest?
         </label><br>
-        <input type="radio" name="warrants" value="yes">Yes
-        <input type="radio" name="warrants" value="no">No<br>
-      </div>
-      <div class="radio">
-        <label for="criminal">
+      <input type="radio" name="warrants" value="yes">Yes
+      <input type="radio" name="warrants" value="no">No<br>
+    </div>
+    <div class="radio">
+      <label for="criminal">
           Are you, or any other occupants, currently engaged in
           any criminal activity?
         </label><br>
-        <input type="radio" name="criminal" value="yes">Yes
-        <input type="radio" name="criminal" value="no">No<br>
-      </div>
-      <div class="radio">
-        <label for="moveEarly">
+      <input type="radio" name="criminal" value="yes">Yes
+      <input type="radio" name="criminal" value="no">No<br>
+    </div>
+    <div class="radio">
+      <label for="moveEarly">
           Have you, or any other occupants, moved out of a
           residence vefore the end of a lease term without
           consent?
         </label><br>
-        <input type="radio" name="moveEarly" value="yes">Yes
-        <input type="radio" name="moveEarly" value="no">No<br>
-      </div>
-      <div class="radio">
-        <label for="drugs">
+      <input type="radio" name="moveEarly" value="yes">Yes
+      <input type="radio" name="moveEarly" value="no">No<br>
+    </div>
+    <div class="radio">
+      <label for="drugs">
           Do you, or any other occupants, use illegal drugs?
         </label><br>
-        <input type="radio" name="drugs" value="yes">Yes
-        <input type="radio" name="drugs" value="no">No<br>
+      <input type="radio" name="drugs" value="yes">Yes
+      <input type="radio" name="drugs" value="no">No<br>
+    </div>
+    <div class="residenceContainer">
+      <h1>Residence History</h1>
+      <h3>Current Residence</h3>
+      <div class="residence">
+        <input type="text" name="currentAddress" value="" placeholder="Full Current Address">
+        <input type="text" name="landlord" value="" placeholder="Landlord/Property Management Co. Name">
+        <input type="tel" pattern="[0-9]{10}" name="landLordPhone" value="" placeholder="Landlord/Property Management Co. Phonenumber">
+        <input type="number" name="currentRent" value="" placeholder="Current Monthly Rent">
+        <input type="text" name="roommates" value="" placeholder="Number of Roommates">
+        <input type="text" name="lengthLived" value="" placeholder="How long have you lived at this address">
       </div>
-      <div class="residenceContainer">
-        <h1>Residence History</h1>
-        <h3>Current Residence</h3>
-        <div class="residence">
-          <input type="text" name="currentAddress" value="" placeholder="Full Current Address">
-          <input type="text" name="landlord" value="" placeholder="Landlord/Property Management Co. Name">
-          <input type="tel" pattern="[0-9]{10}" name="landLordPhone" value="" placeholder="Landlord/Property Management Co. Phonenumber">
-          <input type="number" name="currentRent" value="" placeholder="Current Monthly Rent">
-          <input type="text" name="roommates" value="" placeholder="Number of Roommates">
-          <input type="text" name="lengthLived" value="" placeholder="How long have you lived at this address">
-        </div>
+    </div>
+    <button type="button" onclick="addResidence()">Add Residence</button>
+    <div class="employmentContainer">
+      <h1>Employment History</h1>
+      <h3>Please give a three year employment history</h3>
+      <h3>Current Employer</h3>
+      <div class="employment">
+        <input type="text" name="employer" value="" placeholder="Present Employer">
+        <input type="text" name="employerAddress" value="" placeholder="Employer Address">
+        <input type="text" name="supervisor" value="" placeholder="Supervisor/Manager">
+        <input type="text" name="position" value="" placeholder="Position">
+        <input type="text" name="employmentLength" value="" placeholder="Length of Employment">
+        <input type="text" name="income" value="" placeholder="Monthly Gross Income">
+        <input type="text" name="otherIncome" value="" placeholder="Other Income Sources">
+        <input type="text" name="totalMonthly" value="" placeholder="Total Monthly Amount">
       </div>
-      <button type="button" onclick="addResidence()">Add Residence</button>
-      <div class="employmentContainer">
-        <h1>Employment History</h1>
-        <h3>Please give a three year employment history</h3>
-        <h3>Current Employer</h3>
-        <div class="employment">
-          <input type="text" name="employer" value="" placeholder="Present Employer">
-          <input type="text" name="employerAddress" value="" placeholder="Employer Address">
-          <input type="text" name="supervisor" value="" placeholder="Supervisor/Manager">
-          <input type="text" name="position" value="" placeholder="Position">
-          <input type="text" name="employmentLength" value="" placeholder="Length of Employment">
-          <input type="text" name="income" value="" placeholder="Monthly Gross Income">
-          <input type="text" name="otherIncome" value="" placeholder="Other Income Sources">
-          <input type="text" name="totalMonthly" value="" placeholder="Total Monthly Amount">
-        </div>
-      </div>
-      <button type="button" onclick="addEmployment()">Add Employment</button>
-      <br><br>
-      <button type="submit">Submit</button>
-    </form>
-    <nav id="bottom-nav">
-      <span>Haddon House</span>
-      <span>©&nbsp;Copyright | All Rights Reserved</span>
-      <a href="#top">Top</a>
-    </nav>
-  </body>
-  <script src="../js/application.js"></script>
+    </div>
+    <button type="button" onclick="addEmployment()">Add Employment</button>
+    <br><br>
+    <button type="submit">Submit</button>
+  </form>
+  <nav id="bottom-nav">
+    <span>Haddon House</span>
+    <span>©&nbsp;Copyright | All Rights Reserved</span>
+    <a href="#top">Top</a>
+  </nav>
+</body>
+<script src="../js/application.js"></script>
+
 </html>
