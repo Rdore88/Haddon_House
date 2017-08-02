@@ -1,6 +1,4 @@
-console.log("connected");
 var makeBSS = function (el, options) {
-  console.log("el: ", el);
     var $slideshows = document.querySelectorAll(el), // a collection of all of the slideshow
         $slideshow = {},
         Slideshow = {

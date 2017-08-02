@@ -2,8 +2,6 @@ var map;
 const home = {lat: 33.768188, lng: -84.372292};
 const ponceMarket = {lat: 33.772008, lng: -84.366988}
 
-console.log("https://maps.googleapis.com/maps/api/js?key=" + config.MAPS_KEY+ "initMap");
-
 var googleAPI = document.createElement('script');
 googleAPI.type = 'text/javascript';
 googleAPI.src = "https://maps.googleapis.com/maps/api/js?key=" + config.MAPS_KEY+ "&callback=initMap";
@@ -29,8 +27,6 @@ function initMap(){
 
 //update this with your js_form selector
   var form_id_js = "javascript_form";
-
-  console.log(config.EMAIL_KEY);
 
   var data_js = {
       "access_token": config.EMAIL_KEY
@@ -59,7 +55,6 @@ function initMap(){
               js_onSuccess();
           } else
           if(request.readyState == 4) {
-            console.log(request.response);
               js_onError(request.response);
           }
       };
@@ -74,7 +69,6 @@ function initMap(){
 
       request.open("POST", "https://postmail.invotes.com/send", true);
       request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-      console.log(params);
       request.send(params);
 
       return false;

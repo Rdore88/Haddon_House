@@ -41,7 +41,6 @@ function gorgeusCircle(){
 }
 
 function addCircles(mediaQuery){
-  console.log('Hello World');
   if (widthQuery.matches) {
     superbCircle();
     locationCircle();

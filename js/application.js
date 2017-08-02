@@ -49,7 +49,6 @@ function lengthLived(num){
 
 function addResidence(){
   var residence = document.querySelector('.residenceContainer');
-  console.log(residence);
   var pastResidences = document.querySelectorAll('.residence');
   var num = pastResidences.length + 1;
   var header = document.createElement('h3')
